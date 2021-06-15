@@ -4,6 +4,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.safari.SafariDriver;
 
 public class WebDriverFactory {
 
@@ -15,10 +16,14 @@ public class WebDriverFactory {
         } else if (browserType.equalsIgnoreCase("firefox")){
             WebDriverManager.firefoxdriver().setup();
             driver = new FirefoxDriver();
+        }
+        else if (browserType.equalsIgnoreCase("safari")) {
+            WebDriverManager.firefoxdriver().setup();
+            driver = new SafariDriver();
         } else {
             System.out.println("Error!!! Please enter valid Browser name!");
         }
-        driver.manage().window().maximize();
+//        driver.manage().window().maximize();
         return driver;
     }
 }
