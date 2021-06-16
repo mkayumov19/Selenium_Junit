@@ -24,7 +24,7 @@ public class VerifyOrderInList {
     @Test
     public void verifyOrderInList() {
         SmartBearUtils.loginToSmartBear(driver);
-        SmartBearUtils.verifyOrder(driver, "FamilyAlbum");
+        SmartBearUtils.verifyOrder(driver, "Mark Smith");
 
     }
 

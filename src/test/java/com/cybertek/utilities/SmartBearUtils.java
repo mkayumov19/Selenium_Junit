@@ -27,7 +27,7 @@ public class SmartBearUtils {
 
     public static void verifyOrder(WebDriver driver, String name) {
         List<String> actualProduct = new ArrayList<>();
-        List<WebElement> orders = driver.findElements(By.xpath("//table[@id='ctl00_MainContent_orderGrid']//tr//td[3]"));
+        List<WebElement> orders = driver.findElements(By.xpath("//table[@id='ctl00_MainContent_orderGrid']//tr//td[2]"));
         for (WebElement temp : orders) {
             actualProduct.add(temp.getText());
         }
