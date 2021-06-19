@@ -50,5 +50,9 @@ public class P0_Checkbox_Practice {
             System.out.println("Checkbox 2 is selected. Verification FAILED!");
         }
 
+        driver.navigate().refresh();
+        Thread.sleep(2000);
+        checkbox1 = driver.findElement(By.xpath("(//input[@type='checkbox'])[1]"));
+        checkbox1.click();
     }
 }

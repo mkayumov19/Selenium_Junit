@@ -34,6 +34,7 @@ public class MultipleWindowsPractice {
             if (driver.getTitle().contains("Etsy")){
                 Assert.assertTrue(driver.getTitle().contains("Etsy"));
                 break;                              // after getting etsy title, stops execution
+
             }
         }
     }

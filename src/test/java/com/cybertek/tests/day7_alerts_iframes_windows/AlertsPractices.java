@@ -1,6 +1,5 @@
 package com.cybertek.tests.day7_alerts_iframes_windows;
 
-import com.cybertek.utilities.LibraryUtils;
 import com.cybertek.utilities.WebDriverFactory;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
@@ -52,7 +51,9 @@ public class AlertsPractices {
         String expectedText = "You successfully clicked an alert";
         String actualText = resultText.getText();
 
-        Assert.assertTrue(resultText.isDisplayed());
+        Assert.assertTrue(resultText.isDisplayed(), "Result text is NOT displayed on the page.");
+
+        Assert.assertEquals(actualText, expectedText, "Actual text is not as expected.");
 
 
     }
