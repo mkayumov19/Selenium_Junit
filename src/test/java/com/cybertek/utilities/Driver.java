@@ -10,15 +10,15 @@ import java.util.concurrent.TimeUnit;
 public class Driver {
 
     /*
-    Creating private constructor so its class' object is not reachable from outside
-     */
+        Creating private constructor so its class' object is not reachable from outside
+         */
     private Driver() {
 
     }
 
     /*
    Making webdriver private so its not reachable from outside of the class
-   Making it static so we can run it before everything el;se and we can use it in static method
+   Making it static so we can run it before everything else and we can use it in static method
     */
     private static WebDriver driver;
 
@@ -27,7 +27,7 @@ public class Driver {
     */
     public static WebDriver getDriver(){
 
-         if (driver == null){
+        if (driver == null){
             /*
             We read the browser type from configuration.properties file using .getProperty method we are creating
             in ConfigurationReader class

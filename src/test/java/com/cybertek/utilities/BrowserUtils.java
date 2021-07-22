@@ -17,8 +17,4 @@ public class BrowserUtils {
 
     }
 
-//    public static void implicitWait(int second){
-//
-//    }
-
 }
